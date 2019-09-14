@@ -31,7 +31,6 @@ func cmd(inputDir string) error {
 	}
 
 	for _, file := range files {
-		fmt.Println(file.Name)
 		if _, err := xid.FromString(file.Name); err == nil {
 			continue
 		}
